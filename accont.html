@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja virtual</title>
+    
+    <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+    <header>
+        <button id="bars"><i class="fas fa-bars"></i></button>
+        <nav class="options" id="sidebar">
+            
+            <div class="logo"><p>Logo</p></div>
+            <div class="menu">
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="accont.html">Log-in</a></li>
+            </ul>
+            </div>
+            <button id="car"><i class ="fa-solid fa-cart-shopping"></i></button>
+        </nav>
+    </header>
+    <section id="form">
+        <div >
+            <form id="cadUser" class="" method="POST">
+                <p>Crie uma conta!</p>
+                <label for="idname">Nome</label>
+                <input type="text" id="idname" name="cadNome">
+                <label for="idemail">E-mail</label>
+                <input type="email" id="idemail" class="email" name="cadEmail">
+                <label for="idpassword">Senha</label>
+                <input type="password" id="idpassword" name="cadPassword" minlength="8" required>
+                <label for="idnasc">Data de nascimento</label>
+                <input type="date" id="idnasc" name="cadData-nascimento">
+                
+                <input type="button" class="enviar" value="Cadastrar" onclick="verifUser('1')" id="cad">
+            </form>
+        </div>
+        <div>
+            <form id="logUser" class="">
+                <p>Faça login!</p>
+                <label for="idemail">E-mail</label>
+                <input type="email" id="idemail" class="email" name="email">
+                <label for="idpassword">Senha</label>
+                <input type="password" id="idpassword" name="password">
+                
+                <input type="submit" class="enviar" value="Entrar" onclick="verifUser('2')">
+            </form>
+            alguma coisa
+        </div>
+    </section>
+    <footer><p>by Patrick marquezini</p></footer>
+    <script src="script/index.js"></script>
+    
+    </script>
+</body>
+</html>

@@ -10,22 +10,18 @@ VALUES('', '$nome','$email','$senha','$nascimento')";
 $verif = "select email from users";
 $a = mysqli_query($conexao, $verif);
 mysqli_query($conexao, $infoRequest);
-while($a){
-    echo "$a";
-}
-
-
-if(mysqli_errno($conexao)){
+if($a == $email){
     echo "<script>
 alert('Endereço de E-mail já cadastrado em nosso sistema');
-window.location = '/projetos-php/Loja online/accont.html';
+window.location = '/github/Loja online/accont.html';
 
 </script>";
 }else{
 echo "<script>
 alert('usuario cadastrado com sucesso!');
-window.location = '/projetos-php/Loja online/accont.html';
+window.location = '/github/Loja online/accont.html';
 
 </script>";
 }
+mysqli_close($conexao);
 ?>

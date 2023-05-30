@@ -16,11 +16,5 @@ window.location = '/github/loja-online/accont.html';
 
 </script>";
 
-echo "<script>
-alert('usuario cadastrado com sucesso!');
-window.location = '/github/loja-online/accont.html';
-
-</script>";
-
 mysqli_close($conexao);
 ?>

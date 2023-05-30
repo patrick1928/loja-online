@@ -7,7 +7,14 @@ $nascimento = $_POST['cadData-nascimento'];
 
 $infoRequest = "INSERT IGNORE INTO users(id, nome, email, senha, nascimento)
 VALUES('', '$nome','$email','$senha','$nascimento')";
+$verif = "select email from users";
+$a = mysqli_query($conexao, $verif);
 mysqli_query($conexao, $infoRequest);
+while($a){
+    echo "$a";
+}
+
+
 if(mysqli_errno($conexao)){
     echo "<script>
 alert('Endereço de E-mail já cadastrado em nosso sistema');

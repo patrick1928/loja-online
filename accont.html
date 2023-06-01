@@ -8,6 +8,7 @@
     
     <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='css/style.css'>
+    
 </head>
 <body>
     <header>
@@ -40,7 +41,7 @@
                 <label for="idnasc">Data de nascimento</label>
                 <input type="date" id="idnasc" name="cadData-nascimento" max="2023" min="2001" required>
                 
-                <input type="button" class="enviar" value="Cadastrar" onclick="checkValidity()" id="cad">
+                <input type="button" class="enviar" value="Cadastrar" onclick="verifUser(1)" id="cad">
                
             </form>
         </div>
@@ -48,9 +49,9 @@
             <form id="logUser" class="">
                 <p>Faça login!</p>
                 <label for="idemail">E-mail</label>
-                <input type="email" id="idemaillog" class="email" name="email">
+                <input type="email" id="idemaillog" class="email" name="email" autocomplete="email">
                 <label for="idpassword">Senha</label>
-                <input type="password" id="idpasswordlog" name="password">
+                <input type="password" id="idpasswordlog" autocomplete="current-password" name="password">
                 
                 <input type="button" class="enviar" value="Entrar" onclick="verifUser(2)" id="log">
             </form>

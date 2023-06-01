@@ -13,3 +13,8 @@ menubtn.addEventListener('click', () => {
         menubtn.style.left = '0%';
     }
 })
+function verifUser(x){
+    if(x){
+        alert(x)
+    }
+}

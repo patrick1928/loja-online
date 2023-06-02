@@ -10,7 +10,7 @@
     <link rel='stylesheet' href='css/style.css'>
     
 </head>
-<body>
+<body >
     <header>
         <button id="bars"><i class="fas fa-bars"></i></button>
         <nav class="options" id="sidebar">
@@ -42,7 +42,7 @@
                 <input type="date" id="idnasc" name="cadData-nascimento" max="2023" min="2001" required>
                 
                 <input type="button" class="enviar" value="Cadastrar" onclick="verifUser(1)" id="cad">
-               
+                <p>ola mundo!</p>
             </form>
         </div>
         <div>
@@ -53,12 +53,13 @@
                 <label for="idpassword">Senha</label>
                 <input type="password" id="idpasswordlog" autocomplete="current-password" name="password">
                 
-                <input type="button" class="enviar" value="Entrar" onclick="verifUser(2)" id="log">
+                <input type="button" class="enviar"  value="Entrar" onclick="verifUser(2)" id="log">
             </form>
         </div>
     </section>
     <footer><p>by Patrick marquezini</p></footer>
     <script src="script/index.js"></script>
+    <script src="script/reload.js"></script>
     
     </script>
 </body>

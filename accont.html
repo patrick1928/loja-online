@@ -7,7 +7,7 @@
     <title>Loja virtual</title>
     
     <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/style'>
     
 </head>
 <body >
@@ -29,7 +29,20 @@
         </nav>
     </header>
     <section id="form">
-        <div >
+       
+        <div>
+            <form id="logUser" class="">
+                <p>Faça login!</p>
+                <label for="idemail">E-mail</label>
+                <input type="email" id="idemaillog" class="email" name="email" autocomplete="email">
+                <label for="idpassword">Senha</label>
+                <input type="password" id="idpasswordlog" autocomplete="current-password" name="password">
+                
+                <input type="button" class="enviar"  value="Entrar" onclick="verifUser(2)" id="log">
+            </form>
+        </div>
+
+         <div >
             <form id="cadUser" class="" method="POST">
                 <p>Crie uma conta!</p>
                 <label for="idname">Nome</label>
@@ -42,25 +55,12 @@
                 <input type="date" id="idnasc" name="cadData-nascimento" max="2023" min="2001" required>
                 
                 <input type="button" class="enviar" value="Cadastrar" onclick="verifUser(1)" id="cad">
-                <p>ola mundo!</p>
             </form>
         </div>
-        <div>
-            <form id="logUser" class="">
-                <p>Faça login!</p>
-                <label for="idemail">E-mail</label>
-                <input type="email" id="idemaillog" class="email" name="email" autocomplete="email">
-                <label for="idpassword">Senha</label>
-                <input type="password" id="idpasswordlog" autocomplete="current-password" name="password">
-                
-                <input type="button" class="enviar"  value="Entrar" onclick="verifUser(2)" id="log">
-            </form>
-        </div>
+
     </section>
     <footer><p>by Patrick marquezini</p></footer>
-    <script src="script/index.js"></script>
-    <script src="script/reload.js"></script>
-    
+    <script src="script/index.js"></script>    
     </script>
 </body>
 </html>

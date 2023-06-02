@@ -1,0 +1,24 @@
+{
+  "name": "loja-online",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick1928/loja-online.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrick1928/loja-online/issues"
+  },
+  "homepage": "https://github.com/patrick1928/loja-online#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.0"
+  }
+}

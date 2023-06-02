@@ -11,10 +11,18 @@ menubtn.addEventListener('click', () => {
         c--
         sidebar.style.animationName = 'hideSidebar';
         menubtn.style.left = '0%';
+        
     }
 })
 function verifUser(x){
-    if(x){
-        alert(x)
-    }
+        let camposInput = [document.getElementById('idemaillog'),document.getElementById('idpasswordlog')];
+             for(let c in camposInput){
+                if(camposInput[c].value != "" && camposInput[1].value.length >= 8){
+                camposInput[c].style.border = '1px solid green';
+                }
+                else{
+                alert('Todos os campos devem ser preenchidos!')
+                }
+            }
+
 }

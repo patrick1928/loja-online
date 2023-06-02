@@ -20,7 +20,7 @@ app.get('/css/style', (req, res) => {
     //imagens
 });
 app.get('/imagens', (req, res) => {
-    res.sendFile(__dirname + '/imagens/tecladoGamer.jpg')
+    res.sendFile(__dirname + '/imagens')
 })
 
 //arquivos js

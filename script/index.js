@@ -19,6 +19,7 @@ function verifUser(x){
              for(let c in camposInput){
                 if(camposInput[c].value != "" && camposInput[1].value.length >= 8){
                 camposInput[c].style.border = '1px solid green';
+                document.getElementById('logUser').action = 'script/queryUser';
                 }
                 else{
                 alert('Todos os campos devem ser preenchidos!')

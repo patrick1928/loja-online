@@ -7,7 +7,7 @@
     <title>Loja virtual</title>
     
     <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='css/style'>
+    <link rel='stylesheet' href='css/style.css'>
     
 </head>
 <body >
@@ -19,10 +19,10 @@
             <div class="menu">
             
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="accont">Log-in</a></li>
+                <li><a href="/accont.html">Log-in</a></li>
             </ul>
             </div>
             <button id="car"><i class ="fa-solid fa-cart-shopping"></i></button>
@@ -31,7 +31,7 @@
     <section id="form">
        
         <div>
-            <form id="logUser" class="" method="POST">
+            <form id="logUser" class="" method="POST" action="script/queryUser">
                 <p>Faça login!</p>
                 <label for="idemail">E-mail</label>
                 <input type="email" id="idemaillog" class="email" name="email" autocomplete="email">
@@ -60,7 +60,7 @@
 
     </section>
     <footer><p>by Patrick marquezini</p></footer>
-    <script src="script/index"></script>    
+    <script src="script/index.js"></script>    
     </script>
 </body>
 </html>

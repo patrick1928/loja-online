@@ -3,12 +3,10 @@ const app = new Express();
 const PORT = 3000;
 //caminhos
 //arquivos html
-app.get('/' , (req, res) => {
-    res.sendFile(__dirname + '/index.html')
-})
 app.get('/index.html' , (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
+
 app.get('/accont.html', (req, res)=> {
     res.sendFile(__dirname + '/accont.html')
 })
